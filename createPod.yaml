@@ -6,12 +6,10 @@ metadata:
     run: mypod
 spec:
   containers:
-  - image: aaronspencedocker/node-web-app:latest
-    name: nodewebapp
-    imagePullPolicy: Never
-    ports:
-    - containerPort: 3001
+    - image: adityan28/week4:latest
+      name: nodewebapp
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 3001
   dnsPolicy: ClusterFirst
   restartPolicy: Always
-  
-
